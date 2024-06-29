@@ -1,0 +1,77 @@
+.dates-container {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+.time-container {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.time-title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+}
+.empty-date-text {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+.working-date-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.time-all-container {
+  padding-bottom: 70px;
+}
+.tick-container {
+  margin-right: 13px;
+  border: 2px solid #ffffff;
+  border-radius: 9px;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.isworking-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+.tick-img {
+  opacity: 0;
+  transition: all 0.2s;
+  width: 22px;
+  height: 22px;
+  transform: scale(0.75);
+}
+.tick-img-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.main-container-light {
+  color: #000;
+}
+.main-container-light .tick-container {
+  border: 2px solid #000;
+}
+.main-container-light .empty-date-text,
+.main-container-light .time-title,
+.main-container-light .isworking-text {
+  color: #000;
+}
+.main-container-light .tick-img {
+  filter: invert(100%);
+}

@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Specialist" ALTER COLUMN "photoUrl" SET DEFAULT '0099618a-912a-4110-8783-28e2263ead85';

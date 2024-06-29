@@ -1,0 +1,23 @@
+.arrow-back-container {
+  width: 29px;
+  height: 29px;
+  background: rgba(217, 217, 217, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.arrow-back-container:hover {
+  transform: scale(1.05);
+}
+.arrow-back-img {
+  padding-right: 2px;
+}
+
+.arrow-back-container-light {
+  background: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,34 @@
+.load-more-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  transition: all 0.3s;
+}
+.load-more-btn {
+  background: var(--tg-theme-button-color);
+  border-radius: 13px;
+  box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.15);
+  padding: 15px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  bottom: 8px;
+  z-index: 20;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.load-more-btn:hover {
+  transform: scale(1.07);
+}
+.load-more-text {
+  font-size: 15px;
+  color: var(--tg-theme-button-text-color);
+  margin: 0;
+}
+.load-more-hidden {
+  pointer-events: none;
+  opacity: 0;
+  height: 0;
+}

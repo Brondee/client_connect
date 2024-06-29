@@ -1,0 +1,23 @@
+.price-diapason {
+  display: flex;
+  align-items: center;
+}
+.price-input {
+  width: 15%;
+  height: 44px;
+  border-radius: 15px;
+  font-size: 14px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+.price-separator {
+  margin: 0 10px;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.sub-label {
+  font-size: 13px;
+  opacity: 0.6;
+}

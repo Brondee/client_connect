@@ -1,0 +1,32 @@
+.time-handler {
+  border: 2.5px solid #ffffff;
+  border-radius: 12px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.time-handler:nth-child(3n) {
+  margin-right: 0;
+}
+.time-handler-active {
+  color: #000000;
+  background: #ffffff;
+}
+.time-obj {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.time-handler-light {
+  color: #000;
+  border: 2.5px solid #000;
+}
+.time-handler-light.time-handler-active {
+  color: #fff;
+  background: #000;
+}

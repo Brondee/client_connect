@@ -1,0 +1,95 @@
+.specialist-form {
+  margin-top: 20px;
+  padding-bottom: 100px;
+}
+.file-input-container {
+  display: flex;
+  flex-direction: column;
+}
+.file-input-container input[type="file"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.file-btn {
+  width: 100%;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.file-btn:hover {
+  background: var(--tg-theme-button-color);
+}
+.file-input-light {
+  background: #000;
+}
+.file-btn-chosen {
+  background: var(--tg-theme-button-color);
+}
+.icon-light {
+  filter: invert(100%);
+}
+.file-title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+.file-title-light {
+  color: #000;
+}
+.pink-text {
+  color: #000;
+}
+.timetable-label-container {
+  margin-top: 15px;
+}
+.timetable-container {
+  display: flex;
+  align-items: center;
+}
+.input-timetable {
+  border: 2.5px solid #ffffff;
+  border-radius: 8px;
+  background: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-left: 15px;
+  width: 22px;
+  height: 35px;
+  margin-top: 8px;
+}
+.input-timetable:focus {
+  outline: none;
+  border: 2.5px solid var(--tg-theme-button-color);
+}
+.timetable-text {
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0 10px;
+  padding-top: 5px;
+}
+.timetable-light {
+  color: #000;
+}
+.begin-date-container {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+.begin-date-container .timetable-text {
+  margin-left: 0;
+}
+.input-begin-date {
+  width: 100px;
+}

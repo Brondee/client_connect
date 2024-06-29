@@ -1,0 +1,24 @@
+.loader-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.progress-3 {
+  width: 120px;
+  height: 20px;
+  border-radius: 20px;
+  background: repeating-linear-gradient(
+        135deg,
+        var(--tg-theme-button-text-color) 0 10px,
+        var(--tg-theme-button-color) 0 20px
+      )
+      0/0% no-repeat,
+    repeating-linear-gradient(135deg, #ddd 0 10px, #eee 0 20px) 0/100%;
+  animation: p3 2s infinite;
+}
+@keyframes p3 {
+  100% {
+    background-size: 100%;
+  }
+}

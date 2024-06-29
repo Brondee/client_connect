@@ -1,0 +1,116 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 6px;
+  transition: all 0.2s;
+}
+.label-error {
+  color: #ff7d7d;
+}
+.input {
+  width: calc(100% - 37px);
+  height: 44px;
+  border: 2.5px solid #fff;
+  border-radius: 25px;
+  background: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 15px;
+  transition: all 0.2s;
+}
+.input:focus {
+  outline: none;
+}
+.input-error {
+  border: 2.5px solid #ff7d7d;
+}
+.tg-warning-container {
+  background: #fff1f1;
+  border: 3px solid #ff7d7d;
+  border-radius: 17px;
+  width: calc(100%-40px);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.tg-warning-text {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 0 15px;
+}
+.details-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+}
+.spec-container {
+  height: 50px;
+  padding-left: 20px;
+}
+
+.day-title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.detail-time {
+  font-weight: 500;
+  font-size: 14px;
+  color: #414141;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.line {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 57px;
+  height: 2px;
+  margin-top: 40px;
+}
+.container-multiple {
+  border-radius: 2px;
+  margin: 2px 0;
+}
+.container-service-first {
+  border-radius: 17px 17px 2px 2px;
+}
+.container-service-last {
+  border-radius: 2px 2px 17px 17px;
+}
+.service-counter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.service-counter,
+.services-price {
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+.main-container-light .label,
+.main-container-light .service-counter,
+.main-container-light .services-price,
+.main-container-light .details-title {
+  color: #000000;
+}
+.main-container-light .input {
+  color: #000000;
+  border: 2.5px solid #000;
+}
+.main-container-light .line {
+  background: #000;
+}

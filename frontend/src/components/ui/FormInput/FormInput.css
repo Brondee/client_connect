@@ -1,0 +1,41 @@
+.form-label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 6px;
+  transition: all 0.2s;
+}
+.form-label-light {
+  color: #000000;
+}
+.form-label-error {
+  color: #ff7d7d;
+}
+.form-input {
+  width: calc(100% - 37px);
+  height: 44px;
+  border: 2.5px solid #ffffff;
+  border-radius: 25px;
+  background: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  transition: all 0.2s;
+}
+.form-input:focus {
+  border: 2.5px solid var(--tg-theme-button-color);
+}
+.form-input-light {
+  color: #000000;
+  border: 2.5px solid #000000;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-input-error {
+  border: 2.5px solid #ff7d7d;
+}

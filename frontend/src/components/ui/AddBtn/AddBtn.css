@@ -1,0 +1,21 @@
+.add-btn-container {
+  background: #ffffff;
+  border-radius: 20px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 20px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.add-btn-container:hover {
+  background: #efefef;
+}
+.add-btn-container p {
+  font-weight: 600;
+  font-size: 16px;
+  color: #282e33;
+  margin-left: 10px;
+}

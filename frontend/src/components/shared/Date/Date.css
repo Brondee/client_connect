@@ -1,0 +1,58 @@
+.date-container {
+  border-radius: 13px;
+  padding: 7px 0;
+  min-width: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.2s;
+}
+.date-container:first-child {
+  margin-left: 0;
+}
+.date-active {
+  background: #ffffff;
+}
+
+.month-title {
+  font-weight: 500;
+  font-size: 12px;
+  color: #8b8b8b;
+  margin: 0;
+}
+.month-title-working {
+  color: #ffffff;
+}
+.date {
+  font-weight: 700;
+  font-size: 18px;
+  color: #8b8b8b;
+  margin: 0;
+  margin-top: 5px;
+}
+.date-working {
+  color: #ffffff;
+}
+.date-active .date,
+.date-active .month-title {
+  color: #000000;
+}
+
+.date-container-light .date,
+.date-container-light .month-title {
+  color: #8b8b8b;
+}
+.date-container-light.date-active {
+  background: #000000;
+}
+.date-container-light.date-active .date,
+.date-container-light.date-active .month-title {
+  color: #fff;
+}
+.date-container-light .month-title-working,
+.date-container-light .date-working {
+  color: #000000;
+}

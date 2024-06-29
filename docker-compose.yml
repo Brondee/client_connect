@@ -1,0 +1,67 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:13
+    restart: always
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123556
+      POSTGRES_DB: nest
+    networks:
+      - brondee
+  backend:
+    image: brondee/tg-web-app-back
+    restart: always
+    build:
+      dockerfile: backend/Dockerfile
+      context: .
+    container_name: backend
+    environment:
+      DATABASE_URL: postgresql://postgres:123556@postgres:5432/nest?schema=public
+      CORS_URL: https://tgorderapp.ru
+    depends_on:
+      - postgres
+    ports:
+      - 3333:3333
+    networks:
+      - brondee
+  py_bot:
+    image: brondee/py-bot
+    restart: always
+    build:
+      dockerfile: bot/Dockerfile
+      context: .
+    container_name: py_bot
+    command: python bot_config.py
+    depends_on:
+      - backend
+    environment:
+      request_url: https://tgorderapp.ru/api/
+      web_url: https://tgorderapp.ru/
+      number_of_spec: 3
+      pincode: 3214
+      admin_chat_id: 823385431
+      admin_chat_group_id: -960745530
+    ports:
+      - 9090:9090
+    networks:
+      - brondee
+  frontend:
+    image: brondee/tg-web-app-front
+    restart: always
+    build:
+      dockerfile: frontend/Dockerfile
+      context: .
+    container_name: frontend
+    depends_on:
+      - backend
+    environment:
+      REACT_APP_REQUEST_URL: https://tgorderapp.ru/api/
+    ports:
+      - 3000:3000
+    networks:
+      - brondee
+networks:
+  brondee:

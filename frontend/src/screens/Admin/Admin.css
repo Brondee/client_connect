@@ -1,0 +1,50 @@
+.sections-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.section {
+  width: calc(48% - 12px);
+  height: 165px;
+  background: #ffeeee;
+  border-radius: 17px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  cursor: pointer;
+}
+.section-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+}
+.section-spec {
+  background-image: url("../../assets/img/like.png");
+  background-repeat: no-repeat;
+  background-position: bottom -20px right -10px;
+}
+.section-services {
+  background-image: url("../../assets/img/fire.png");
+  background-repeat: no-repeat;
+  background-position: bottom -40px right -20px;
+}
+.section-categories {
+  background-image: url("../../assets/img/puzzle.png");
+  background-repeat: no-repeat;
+  background-position: bottom -40px right -30px;
+}
+.section-time {
+  background-image: url("../../assets/img/clock.png");
+  background-repeat: no-repeat;
+  background-position: bottom -90px right -20px;
+}
+.section-orders {
+  background-image: url("../../assets/img/files.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 0px;
+}
+.section-general {
+  background-image: url("../../assets/img/settings.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 0px;
+}

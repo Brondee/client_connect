@@ -11,3 +11,6 @@ The booking system is simple and user friendly. After typing start command, ther
 
 ✅ When user confirmed the appointment, the bot will automatically send a notification message to an admin chat.
 Also it will automatically remove all the booked time, including time, that will be needed for providing the service.
+
+## ⚙️ Admin panel
+Admin can access admin panel by typing command /admin_#password#, the admin password is generated with bot creation. After typing the command, an admin panel button will appear, after clicking it a web app will be opened.
